@@ -70,7 +70,26 @@ header h3 {
 
     width: 400px;
     height: 300px;
+.landing {
+    background-image: url("background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* Style all icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
 
+.social a {
+    font-size: 24px;
+    padding: 4px;
+    color: white;
 }
 
 .projects {
