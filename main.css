@@ -24,7 +24,6 @@ html{
 
 body {
 
-    display: flex;
     background-color: var(--dark);
     min-height: 150%;
     min-width: 200%;
