@@ -1,8 +1,6 @@
 :root {
 
     /* main colors */
-
-    --white: #FFFFFF;
     --dark: #2E2C2C ;
     --light: #605F5F;
     --maroon: #4A0707;
@@ -15,6 +13,12 @@
 
 }
 
+title {
+
+    color: white;
+
+}
+
 
 
 body {
@@ -24,7 +28,7 @@ body {
 
 header {
 
-    color: var(--white);
+    color: white;
 
 }
 
@@ -49,25 +53,33 @@ header h3 {
 
 .contentBoxes {
 
-    justify-content: center;
     position: relative;
-
 
 }
 
-.experience, .projects, .organizations, .skills {
+.contentBoxes div {
 
     background-color: var(--light);
     position: relative;
     text-align: center;
     border-radius: 25px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
 
 }
 
-.experience, .organizations, .skills {
+.experience, .education {
 
-    width: 400px;
-    height: 300px;
+    width: 1000px;
+    height: 800px;
+
+}
+
+.projects, .organizations, .skills {
+
+    width: 1200px;
+    height: 600px;
 
 }
 
@@ -77,6 +89,13 @@ header h3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    
+}
+
+.landing h1, .landing h2, .landing p, .landing a {
+
+    color: white;
+
 }
 /* Style all icons */
 .fa {
@@ -94,16 +113,9 @@ header h3 {
     color: white;
 }
 
-.projects {
+.contentBoxes div h1 {
 
-    width: 600px;
-    height: 300px;
-
-}
-
-.experience h1, .projects h1, .organizations h1, .skills h1 {
-
-    color: var(--white);
+    color: white;
     font-size: 1.75rem;
 
 }
@@ -113,15 +125,29 @@ header h3 {
     text-align: center;
     background-color: var(--maroon);
     width: 100%;
-    height: 100px;
+    height: 110px;
     position: relative;
+
+}
+
+.end-bar h1, .end-bar a {
+
+    color: white;
 
 }
 
 .end-bar h1{
 
-    color: var(--white);
-    font-size: 0.6rem;
+    font-size: 1rem;
+
+}
+
+
+
+.end-socials a {
+
+    font-size: 24px;
+    padding: 4px;
 
 }
 
