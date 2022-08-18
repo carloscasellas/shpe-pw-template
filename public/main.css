@@ -153,6 +153,7 @@ header h3 {
 
 .headshot-photo {
     border-radius: 50%;
+    width: 60%;
 }
 
 #navigation {
