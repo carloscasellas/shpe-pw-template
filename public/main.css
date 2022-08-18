@@ -88,8 +88,7 @@ header h3 {
     background-image: url("background.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    
+    text-align: left;
 }
 
 .landing h1, .landing h2, .landing p, .landing a {
@@ -111,6 +110,7 @@ header h3 {
     font-size: 24px;
     padding: 4px;
     color: white;
+    position: relative;
 }
 
 .contentBoxes div h1 {
@@ -149,6 +149,10 @@ header h3 {
     font-size: 24px;
     padding: 4px;
 
+}
+
+.headshot-photo {
+    border-radius: 50%;
 }
 
 #navigation {
