@@ -4,7 +4,6 @@
   "description": "this is an example for a static website",
   "main": "index.html",
   "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
       "css:scss": "node-sass --output-style compressed -o dist src/scss",
       "build": "build -c config.js index.html"
   },
