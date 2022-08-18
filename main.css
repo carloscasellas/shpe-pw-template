@@ -61,7 +61,7 @@ header h3 {
 
     background-color: var(--light);
     position: relative;
-    text-align: center; 
+    text-align: center;
     border-radius: 25px;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -88,36 +88,7 @@ header h3 {
     background-image: url("background.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
     text-align: left;
-    display:grid;
-    grid-template-columns: 50% 30%;
-    grid-template-areas:
-        'headerPhotoColumn headerInfoColumn';
-}
-
-.landinginfo {
-    
-}
-.headerPhotoColumn {
-    width:inherit;
-    height:inherit;
-    background: white;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-area:headerPhotoColumn;
-}
-
-.headerInfoColumn {
-    background:blue;
-    height:inherit;
-    grid-area:headerInfoColumn;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    vertical-align:middle;
-
-
-
 }
 
 .landing h1, .landing h2, .landing p, .landing a {
@@ -140,7 +111,6 @@ header h3 {
     padding: 4px;
     color: white;
     position: relative;
-    left: 755px;
 }
 
 .contentBoxes div h1 {
@@ -183,10 +153,6 @@ header h3 {
 
 .headshot-photo {
     border-radius: 50%;
-    width:inherit;
-    height:inherit;
-    position:relative;
-    float: center;
 }
 
 #navigation {
