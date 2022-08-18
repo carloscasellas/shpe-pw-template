@@ -113,4 +113,27 @@
             </div>
 
 </body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAJvmmAG72x_yqon3Yggc8WPw42ITZBw9s",
+      authDomain: "shpe-pw.firebaseapp.com",
+      projectId: "shpe-pw",
+      storageBucket: "shpe-pw.appspot.com",
+      messagingSenderId: "591687115644",
+      appId: "1:591687115644:web:0e386680b915b4ecb53af9",
+      measurementId: "G-TE9PXS2722"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </html>
