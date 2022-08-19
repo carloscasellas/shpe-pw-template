@@ -1,5 +1,13 @@
 {
+  "name": "Personal Website Template @ TAMU SHPE ",
+  "version": "1.0.0",
+  "description": "this is an example for a static website",
+  "main": "index.html",
+  "scripts": {
+      "css:scss": "node-sass --output-style compressed -o dist src/scss",
+      "build": "build -c config.js index.html"
+  },
   "dependencies": {
-    "core-js": "^3.24.1"
+    "core-js": "3.24.1"
   }
 }

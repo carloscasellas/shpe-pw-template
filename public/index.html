@@ -25,36 +25,37 @@
                 <div class="navbar-collapse collapse" id="navbar10">
                     <ul class="navbar-nav nav-fill w-100">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Experiences</a>
+                            <a class="nav-link" href="#experience">Experiences</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Education</a>
+                            <a class="nav-link" href="#education">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
+                            <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Resume</a>
+                            <a class="nav-link" href="aggie_reveille_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-    <div class="landing">
+    <div class="landing" id="about">
         <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
             <div class="row justify-content-md-center">
                 <div class="col-md-4 text-center">
-                    <img class = "headshot-photo" src="headshot.png" style="width: 60%;">
+                    <img class = "headshot-photo" src="headshot.png">
                 </div>
-                <div class="col-md-6">
-                    <h1>Reveille Aggie</h1>
+                <div class="col-md-6 text-center text-sm-left">  
+                    <!-- ^^ text center makes it centered if on a small device, text-sm-left makes it left align if on a large device -->
+                    <h1 style="font-weight: bold;">Reveille Aggie</h1>
                     <h2>Chemical Engineer '23</h2>
                     <p>
                         I am Miss Rev from Houston, TX and I love treats! When I was small, I realized I wanted to try more, 
@@ -71,66 +72,382 @@
                     </div>
                 </div>
             </div>
+            <div class="row justify-content-md-center">
+                <div class="col text-center social">
+                    <a href="#experience"><i class="fa-solid fa-angles-down scroll-icon"></i></a>
+                </div>
+            </div>
         </div>
     </div>
     
     <div class="contentBoxes">
-
-            <div class="experience">
-
-                <h1>Experience</h1>
-
+        <div id="experience">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4 text-center">
+                        <h2>Experience</h2>
+                    </div>
+                </div>
+                <div class="wrapper-timeline">
+                    <div class="center-line">
+                        <a href="#experience" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+                    </div>
+                    <div class="row row-1">
+                        <section>
+                        <i class="icon fas fa-home"></i>
+                        <div class="details">
+                            <span class="title">Chemist Intern</span>
+                            <span>May - Aug 2022</span>
+                        </div>
+                        <span>Chewy</span>
+                        <p>Tested and analyzed blablabalbalbalb and word word more words Tested and analyzed blablabalbalbalb and word word more words</p>
+                        </section>
+                    </div>
+                    <div class="row row-2">
+                        <section>
+                        <i class="icon fas fa-home"></i>
+                        <div class="details">
+                            <span class="title">Flavoring Researcher</span>
+                            <span>June - Sept 2021</span>
+                        </div>
+                        <span>Pedigree</span>
+                        <p>Certified for tasting blablabalbalbalb and word word more words</p>
+                        </section>
+                    </div>
+                    <div class="row row-1">
+                        <section>
+                        <i class="icon fas fa-home"></i>
+                        <div class="details">
+                            <span class="title">Taster Certification</span>
+                            <span>Sept 2021</span>
+                        </div>
+                        <span>Milk Bone</span>
+                        <p>Tested and analyzed blablabalbalbalb and word word more words</p>
+                        <div class="bottom">
+                            <a href="https://google.com" target="_blank" rel="noopener noreferrer">View Certification</a>
+                        </div>
+                    </section>
+                    </div>
+                    <div class="row row-2">
+                        <section>
+                        <i class="icon fas fa-home"></i>
+                        <div class="details">
+                            <span class="title">Machine Learning Research Intern</span>
+                            <span>Sept 2019 - May 2020</span>
+                        </div>
+                        <span>TAMU Dept of Architecture</span>
+                        <p>Tested and analyzed blablabalbalbalb and word word more words Tested and analyzed blablabalbalbalb and word word more words</p>
+                        </section>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div class="projects">
-
-                <h1>Projects</h1>
-
+        <div id="projects">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4 text-center">
+                        <h2>Projects</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col text-center">
+        <!-- Carousel Start -->
+        <div class="show-large">
+            <div id="carouselControlsLarge" class="carousel slide wrapper" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1616488452538-1e8d3396f20f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1626&q=80" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title 1</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img src="https://images.unsplash.com/photo-1621458257730-cc5d4a4bc924?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2831&q=80" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title 2</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img src="https://images.unsplash.com/photo-1596653048897-c0f1484995d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1722&q=80" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title 3</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1616488452538-1e8d3396f20f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1626&q=80" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title 4</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img src="https://images.unsplash.com/photo-1621458257730-cc5d4a4bc924?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2831&q=80" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title 5</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img src="https://images.unsplash.com/photo-1596653048897-c0f1484995d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1722&q=80" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title 6</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselControlsLarge" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselControlsLarge" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-
-            <div class="education">
-
-                <h1>Education</h1>
-
+        </div>
+            <div class="show-mobile">
+                <div id="carouselControlsMobile" class="carousel slide wrapper" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="cards-wrapper">
+                                <div class="card">
+                                    <img src="https://images.unsplash.com/photo-1616488452538-1e8d3396f20f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1626&q=80" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 1</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cards-wrapper">
+                                <div class="card">
+                                    <img src="https://images.unsplash.com/photo-1621458257730-cc5d4a4bc924?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2831&q=80" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cards-wrapper">
+                                <div class="card">
+                                    <img src="https://images.unsplash.com/photo-1596653048897-c0f1484995d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1722&q=80" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 3</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cards-wrapper">
+                                <div class="card">
+                                    <img src="https://images.unsplash.com/photo-1616488452538-1e8d3396f20f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1626&q=80" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 4</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cards-wrapper">
+                                <div class="card">
+                                    <img src="https://images.unsplash.com/photo-1621458257730-cc5d4a4bc924?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2831&q=80" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 5</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cards-wrapper">
+                                <div class="card">
+                                    <img src="https://images.unsplash.com/photo-1596653048897-c0f1484995d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1722&q=80" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 6</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselControlsMobile" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselControlsMobile" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
-
-            <div class="organizations">
-
-                <h1>Organizations</h1>
-
+        </div>
+        <!-- Carousel End -->
+                </div>
             </div>
+        </div>
 
-            <div class="skills">
-
-                <h1>Skills</h1>
-
+        <div id="education">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4 text-center">
+                        <h2>Education</h2>
+                    </div>
+                </div>
+                <div class="wrapper-timeline">
+                    <div class="center-line">
+                    </div>
+                    <div class="row row-1">
+                        <section>
+                        <i class="icon fas fa-book"></i>
+                        <div class="details">
+                            <span class="title">Bachelors in Chemical Engineering</span>
+                            <span>Aug 2019 - May 2023</span>
+                        </div>
+                        <span>Texas A&M University</span>
+                        <p>GPA: 4.0<br>
+                            Puppy Scholarship, Regents Scholarship, blablabal and word word more words</p>
+                        </section>
+                    </div>
+                    <div class="row row-2">
+                        <section>
+                        <i class="icon fas fa-book"></i>
+                        <div class="details">
+                            <span class="title">Transient Student</span>
+                            <span>May 2020 - Dec 2020</span>
+                        </div>
+                        <span>Laredo College</span>
+                        <p>GPA: 4.0 <br>
+                            Phi Theta Kappa Honor Society blablabalbalbalb and word word more words</p>
+                        </section>
+                    </div>
+                    <div class="row row-1">
+                        <section>
+                        <i class="icon fas fa-book"></i>
+                        <div class="details">
+                            <span class="title">Engineering & Technology
+                                Magnet Student</span>
+                            <span>Aug 2015 - June 2019</span>
+                        </div>
+                        <span>United High School</span>
+                        <p>GPA: 4.0<br>
+                            AP Frisbee, AP Lunch, AP Gym, blablabbalabla and word word more words</p>
+                    </section>
+                    </div>
+                </div>
             </div>
+        </div>
 
+        <div id="organizations">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-10 text-center">
+                        <h2>Organizations</h2>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="skills">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md text-center">
+                        <h2>Skills</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col text-center">
+                        <h4>CSS: Expert</h4>
+                        <img class="img-responsive" src="logo/css.png" alt="CSS">
+                    </div>
+                    <div class="col text-center">
+                        <h4>Firebase: Beginner</h4>
+                        <img class="img-responsive" src="logo/firebase.png" alt="Firebase">
+                    </div>
+                    <div class="col text-center">
+                        <h4>Git: Intermediate</h4>
+                        <img class="img-responsive" src="logo/git.png" alt="Git">
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col text-center">
+                        <h4>HTML: Expert</h4>
+                        <img class="img-responsive" src="logo/html5.png" alt="HTML">
+                    </div>
+                    <div class="col text-center">
+                        <h4>JavaScript: Beginner</h4>
+                        <img class="img-responsive" src="logo/js.png" alt="JavaScript">
+                    </div>
+                    <div class="col text-center">
+                        <h4>Python: Intermediate</h4>
+                        <img class="img-responsive" src="logo/python.png" alt="Python">
+                    </div>
+                    <!-- <div class="col-md text-center">
+                        <h4>{SKILL-NAME}: {SKILL-LEVEL}</h4>
+                        <img class="img-responsive" src="logo/{SKILL-NAME}.png" alt="{SKILL-NAME}">
+                    </div> -->  
+                </div>
+            </div>
+        </div>
+
+        <div class="back-to-top">
+                <div class="justify-content-md-center">
+                    <div class="text-center" style="color: white; padding-bottom: 20px;">
+                        <a href="#about">⬆️ Back to top ⬆️</a>
+                    </div>
+                </div>
+            </div>
     </div>
 
-            <div class="end-bar">
-
-                <h1>Let's keep in touch!<br>Email: <a href="mailto:reveille.aggie@gmail.com" target="_blank" rel="noopener noreferrer">reveille.aggie@gmail.com</a></h1>
-        
-                <div class="end-socials">
-                    <a href="https://www.instagram.com/missrevx/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/school/texas-a&m-university/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>
-                </div>
-        
-            </div>
+    <div class="footer">
+        <h3>Let's keep in touch!</h3>
+        <p>Email: <a href="mailto:reveille.aggie@gmail.com" target="_blank" rel="noopener noreferrer">reveille.aggie@gmail.com</a></p>
+        <div class="social">
+            <a href="https://www.instagram.com/missrevx/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/school/texas-a&m-university/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-arrow-down"></i></a>
+        </div>
+    </div>
 
 </body>
 <script type="module">
-    // Import the functions you need from the SDKs you need
+    // Import the functions from the SDKs
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
   
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    // Firebase configuration
     const firebaseConfig = {
       apiKey: "AIzaSyAJvmmAG72x_yqon3Yggc8WPw42ITZBw9s",
       authDomain: "shpe-pw.firebaseapp.com",

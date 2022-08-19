@@ -1,86 +1,28 @@
 :root {
-
     /* main colors */
     --dark: #2E2C2C ;
     --light: #605F5F;
     --maroon: #4A0707;
-
 }
 
 * {
-
     font-family: 'Fira sans', sans-serif;
-
+    scroll-behavior: smooth;
 }
-
-title {
-
-    color: white;
-
-}
-
-
 
 body {
     margin: 0;
     background-color: var(--dark);
-}
-
-header {
-
     color: white;
-
 }
 
-header h1 { 
-
-    font-size: 3rem;
-
+a {
+    color: white;
 }
 
-header h2 {
-
-    font-size: 2rem;
-
-}
-
-header h3 {
-
-    font-size: 0.85rem;
-    max-width: 600px;
-
-}
-
-.contentBoxes {
-
-    position: relative;
-
-}
-
-.contentBoxes div {
-
-    background-color: var(--light);
-    position: relative;
-    text-align: center;
-    border-radius: 25px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-
-}
-
-.experience, .education {
-
-    width: 1000px;
-    height: 800px;
-
-}
-
-.projects, .organizations, .skills {
-
-    width: 1200px;
-    height: 600px;
-
+a:hover {
+    opacity: 50%;
+    color: white;
 }
 
 .landing {
@@ -91,12 +33,37 @@ header h3 {
     text-align: left;
 }
 
-.landing h1, .landing h2, .landing p, .landing a {
-
-    color: white;
-
+.contentBoxes .container {
+    background-color: var(--light);
+    position: relative;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-top: 12px;
+    padding-bottom: 20px;
 }
-/* Style all icons */
+
+.contentBoxes {
+    color: var(--dark);
+}
+
+.contentBoxes h2 {
+    color: white;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+#skills img{
+    width: 50%;
+    padding-bottom: 16px;
+}
+
+#skills .row {
+    color: white;
+    padding-top: 20px;
+}
+
+/* START style icons */
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -106,57 +73,256 @@ header h3 {
     border-radius: 50%;
 }
 
+.fa-angles-down {
+    font-size: 30px;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
 .social a {
     font-size: 24px;
     padding: 4px;
-    color: white;
     position: relative;
 }
 
-.contentBoxes div h1 {
-
-    color: white;
-    font-size: 1.75rem;
-
+.social a:hover {
+    font-size: 28px;
 }
 
-.end-bar {
+/* END style icons */
 
+.footer {
     text-align: center;
     background-color: var(--maroon);
     width: 100%;
-    height: 110px;
-    position: relative;
-
-}
-
-.end-bar h1, .end-bar a {
-
+    padding-bottom: 20px;
     color: white;
-
 }
 
-.end-bar h1{
-
-    font-size: 1rem;
-
-}
-
-
-
-.end-socials a {
-
-    font-size: 24px;
-    padding: 4px;
-
+.footer h3, .footer a{
+    padding-top: 20px;
+    color: white;
 }
 
 .headshot-photo {
     border-radius: 50%;
+    width: 60%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #navigation {
-
     position: relative;
-
 }
+
+/* 
+
+                        TIMELINE CONTENT START 
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+::selection{
+  color: #fff;
+  background: #33070b;
+}
+.wrapper-timeline{
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0 20px;
+  position: relative;
+}
+.wrapper-timeline .center-line{
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #fff;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+.wrapper-timeline .row{
+  display: flex;
+}
+.wrapper-timeline .row-1{
+  justify-content: flex-start;
+}
+.wrapper-timeline .row-2{
+  justify-content: flex-end;
+}
+.wrapper-timeline .row section{
+  background: #fff;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+}
+.wrapper-timeline .row section::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  top: 28px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.row-1 section::before{
+  right: -7px;
+}
+.row-2 section::before{
+  left: -7px;
+}
+.row section .icon,
+.center-line .scroll-icon{
+  position: absolute;
+  background: #f2f2f2;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: var(--maroon);
+  font-size: 17px;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+.center-line .scroll-icon{
+  bottom: 0px;
+  left: 50%;
+  font-size: 25px;
+  transform: translateX(-50%);
+}
+.row-1 section .icon{
+  top: 15px;
+  right: -60px;
+}
+.row-2 section .icon{
+  top: 15px;
+  left: -60px;
+}
+.row section .details,
+.row section .bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row section .details .title{
+  font-size: 22px;
+  font-weight: 600;
+}
+.title {
+    color: var(--maroon);
+}
+.row section p{
+  margin: 10px 0 17px 0;
+}
+.row section .bottom a{
+  text-decoration: none;
+  background: #33070b;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  /* font-size: 17px; */
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.row section .bottom a:hover{
+  transform: scale(0.97);
+}
+@media(max-width: 790px){
+  .wrapper-timeline .center-line{
+    left: 40px;
+  }
+  .wrapper-timeline .row{
+    margin: 30px 0 3px 60px;
+  }
+  .wrapper-timeline .row section{
+    width: 100%;
+  }
+  .row-1 section::before{
+    left: -7px;
+  }
+  .row-1 section .icon{
+    left: -60px;
+  }
+}
+@media(max-width: 440px){
+  .wrapper-timeline .center-line,
+  .row section::before,
+  .row section .icon{
+    display: none;
+  }
+  .wrapper-timeline .row{
+    margin: 10px 0;
+  }
+}
+/* 
+
+                        TIMELINE CONTENT END
+
+
+*/
+
+/* 
+
+                        PROJECTS CAROUSEL START 
+
+*/
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+}
+
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 20px;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.show-large {
+    display: none;
+}
+
+@media only screen and (min-width: 767px) {
+    .show-mobile {
+        display: none;
+    }
+    .show-large {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .card img {
+        height: 11em;
+    }
+}
+/* 
+
+                        PROJECTS CAROUSEL END 
+
+*/
