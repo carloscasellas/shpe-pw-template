@@ -15,6 +15,13 @@ body {
     color: white;
 }
 
+.landing {
+    position: relative;
+    background-image: url("background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: left;
+}
 
 header h1 { 
     font-size: 3rem;
@@ -29,8 +36,10 @@ header h3 {
     max-width: 600px;
 }
 
-.contentBoxes {
+.contentBoxes .containers{
     position: relative;
+    padding-top: 12px; 
+    padding-bottom: 20px;
 }
 
 .contentBoxes div {
@@ -42,16 +51,7 @@ header h3 {
 }
 
 #experience, #education, #projects, #organizations, #skills {
-    padding-top: 12px; 
-    padding-bottom: 20px;
-}
-
-.landing {
-    position: relative;
-    background-image: url("background.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: left;
+    
 }
 
 /* START style icons */
@@ -79,7 +79,7 @@ header h3 {
 
 /* END style icons */
 
-.end-bar {
+.footer {
     text-align: center;
     background-color: var(--maroon);
     width: 100%;
@@ -87,7 +87,7 @@ header h3 {
     color: white;
 }
 
-.end-bar h3, a{
+.footer h3, a{
     padding-top: 20px;
     color: white;
 }
@@ -95,6 +95,8 @@ header h3 {
 .headshot-photo {
     border-radius: 50%;
     width: 60%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #navigation {

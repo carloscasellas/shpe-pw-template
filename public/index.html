@@ -53,7 +53,8 @@
                 <div class="col-md-4 text-center">
                     <img class = "headshot-photo" src="headshot.png">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 text-center text-sm-left">  
+                    <!-- ^^ text center makes it centered if on a small device, text-sm-left makes it left align if on a large device -->
                     <h1>Reveille Aggie</h1>
                     <h2>Chemical Engineer '23</h2>
                     <p>
@@ -78,7 +79,9 @@
         <div id="experience">
             <div class="container">
                 <div class="row justify-content-md-center">
-                    <h1>Experience</h1>
+                    <div class="col-md-4 text-center">
+                        <h2>Experience</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,7 +89,10 @@
         <div id="projects">
             <div class="container">
                 <div class="row justify-content-md-center">
-                    <h1>Projects</h1>
+                    <div class="col-md-4 text-center">
+                        <h2>Projects</h2>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,7 +100,10 @@
         <div id="education">
             <div class="container">
                 <div class="row justify-content-md-center">
-                    <h1>Education</h1>
+                    <div class="col-md-4 text-center">
+                        <h2>Education</h2>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -102,7 +111,10 @@
         <div id="organizations">
             <div class="container">
                 <div class="row justify-content-md-center">
-                    <h1>Organizations</h1>
+                    <div class="col-md-10 text-center">
+                        <h2>Organizations</h2>
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,13 +122,15 @@
         <div id="skills">
             <div class="container">
                 <div class="row justify-content-md-center">
-                    <h1>Skills</h1>
+                    <div class="col-md text-center">
+                        <h2>Skills</h2>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="end-bar">
+    <div class="footer">
         <h3>Let's keep in touch!</h3>
         <p>Email: <a href="mailto:reveille.aggie@gmail.com" target="_blank" rel="noopener noreferrer">reveille.aggie@gmail.com</a></p>
         <div class="social">
@@ -129,14 +143,13 @@
 
 </body>
 <script type="module">
-    // Import the functions you need from the SDKs you need
+    // Import the functions from the SDKs
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
   
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    // Firebase configuration
     const firebaseConfig = {
       apiKey: "AIzaSyAJvmmAG72x_yqon3Yggc8WPw42ITZBw9s",
       authDomain: "shpe-pw.firebaseapp.com",
