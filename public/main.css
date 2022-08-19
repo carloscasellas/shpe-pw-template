@@ -64,6 +64,13 @@ header h3 {
     border-radius: 50%;
 }
 
+.fa-angles-down {
+    font-size: 30px;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
 .social a {
     font-size: 24px;
     padding: 4px;
