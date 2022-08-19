@@ -53,6 +53,14 @@ header h3 {
 
 #experience, #education, #projects, #organizations, #skills {
     
+#skills img{
+    width: 50%;
+    padding-bottom: 16px;
+}
+
+#skills .row {
+    color: white;
+    padding-top: 20px;
 }
 
 /* START style icons */
