@@ -16,25 +16,21 @@ body {
     color: white;
 }
 
+a {
+    color: white;
+}
+
+a:hover {
+    opacity: 50%;
+    color: white;
+}
+
 .landing {
     position: relative;
     background-image: url("background.png");
     background-position: center;
     background-repeat: no-repeat;
     text-align: left;
-}
-
-header h1 { 
-    font-size: 3rem;
-}
-
-header h2 {
-    font-size: 2rem;
-}
-
-header h3 {
-    font-size: 0.85rem;
-    max-width: 600px;
 }
 
 .contentBoxes .container {
@@ -47,12 +43,16 @@ header h3 {
     padding-bottom: 20px;
 }
 
-.contentBoxes .wrapper {
+.contentBoxes {
     color: var(--dark);
 }
 
-#experience, #education, #projects, #organizations, #skills {
-    
+.contentBoxes h2 {
+    color: white;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
 #skills img{
     width: 50%;
     padding-bottom: 16px;
@@ -83,13 +83,10 @@ header h3 {
 .social a {
     font-size: 24px;
     padding: 4px;
-    color: white;
     position: relative;
 }
 
 .social a:hover {
-    opacity: 50%;
-    color: white;
     font-size: 28px;
 }
 
@@ -103,7 +100,7 @@ header h3 {
     color: white;
 }
 
-.footer h3, a{
+.footer h3, .footer a{
     padding-top: 20px;
     color: white;
 }
