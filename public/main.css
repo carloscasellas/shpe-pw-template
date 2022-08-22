@@ -63,6 +63,15 @@ a:hover {
     padding-top: 20px;
 }
 
+#organizations .row {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#organizations .card-link {
+    color: var(--maroon);
+}
+
 /* START style icons */
 .fa {
     padding: 20px;
